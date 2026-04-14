@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff0c2" />
+      <stop offset="52%" stop-color="#f3cf85" />
+      <stop offset="100%" stop-color="#d49a40" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0a0a0a" />
+  <text
+    x="50%"
+    y="54%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Inter, Arial, sans-serif"
+    font-size="26"
+    font-weight="800"
+    fill="url(#gold)"
+  >
+    VX
+  </text>
+</svg>
