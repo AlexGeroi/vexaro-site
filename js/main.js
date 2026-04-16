@@ -198,25 +198,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-document.querySelectorAll(".lang-switch__link").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    const lang = link.textContent.trim().toLowerCase();
-
-    if (lang !== "en" && lang !== "ru") return;
-
-    event.preventDefault();
-
-    try {
-      sessionStorage.setItem("vexaro_lang_override", lang);
-    } catch (error) {}
-
-    const href = link.getAttribute("href");
-    if (!href) return;
-
-    const separator = href.includes("?") ? "&" : "?";
-    window.location.href = `${href}${separator}lang=${lang}`;
-  });
-});
 const burger = document.getElementById("burger-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 
