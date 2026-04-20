@@ -123,6 +123,7 @@ img {
     rgba(6, 6, 6, 0.55) 70%,
     rgba(6, 6, 6, 0)
   );
+  -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
 .header__inner {
@@ -351,6 +352,14 @@ body.menu-open {
       rgba(243, 207, 133, 0.05),
       transparent 40%
     ),
+    url("assets/img/imghero-bg.png") center / cover no-repeat;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    radial-gradient(
+      circle at center,
+      rgba(243, 207, 133, 0.05),
+      transparent 40%
+    ),
     url("assets/img/imghero-bg.webp") center / cover no-repeat;
 }
 .hero-shell::before {
@@ -510,6 +519,7 @@ body.menu-open {
     rgba(0, 0, 0, 0.2)
   );
 
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 
   display: flex;
@@ -709,6 +719,15 @@ body.menu-open {
   border-radius: 26px;
   overflow: hidden;
 
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.65) 35%,
+      rgba(0, 0, 0, 0.2) 60%,
+      transparent 80%
+    ),
+    url("assets/img/about-visual.jpg") right center / cover no-repeat;
   background:
     linear-gradient(
       90deg,
@@ -1070,6 +1089,7 @@ body.menu-open {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.72);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -1502,6 +1522,7 @@ body.modal-open {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.72);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -2079,6 +2100,7 @@ body.modal-open {
       rgba(8, 8, 8, 0.98),
       rgba(4, 4, 4, 0.99)
     );
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     box-shadow:
       0 24px 60px rgba(0, 0, 0, 0.52),
