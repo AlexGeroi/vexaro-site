@@ -333,6 +333,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (burger && mobileMenu) {
+    var langSwitchLinks = mobileMenu.querySelectorAll(".lang-switch__link");
+
     closeMenu();
 
     burger.addEventListener("click", function () {
@@ -351,6 +353,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     );
 
+    Array.prototype.forEach.call(langSwitchLinks, function (link) {
+      link.addEventListener("click", closeMenu);
+    });
+
     window.addEventListener("resize", function () {
       if (window.innerWidth > 1100) {
         closeMenu();
@@ -358,9 +364,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     window.addEventListener("pageshow", function () {
-      if (window.innerWidth > 1100) {
-        closeMenu();
-      }
+      closeMenu();
     });
+
+    window.addEventListener("pagehide", closeMenu);
+    window.addEventListener("beforeunload", closeMenu);
   }
 });
