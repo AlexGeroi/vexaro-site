@@ -32,7 +32,7 @@ body {
   color: var(--text);
   font-family: "Inter", sans-serif;
   background:
-    radial-gradient(circle at top, rgba(243, 207, 133, 0.06), transparent 24%),
+    radial-gradient(circle at 50% 0%, rgba(243, 207, 133, 0.06), transparent 24%),
     linear-gradient(180deg, #070707 0%, #030303 100%);
   overflow-x: hidden;
 }
@@ -154,6 +154,7 @@ img {
     var(--gold-4) 100%
   );
   background-size: 220% auto;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   animation: brand-shimmer 4.8s linear infinite;
@@ -411,6 +412,7 @@ body.menu-open {
   letter-spacing: 0.03em;
   color: transparent;
   background: linear-gradient(180deg, #fff8e0 0%, #f6d892 45%, #d59f43 90%);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow:
@@ -847,7 +849,7 @@ body.menu-open {
   border-radius: 50%;
   border: 1px solid rgba(246, 201, 108, 0.35);
   background:
-    radial-gradient(circle at top, rgba(243, 207, 133, 0.12), rgba(0, 0, 0, 0)),
+    radial-gradient(circle at 50% 0%, rgba(243, 207, 133, 0.12), rgba(0, 0, 0, 0)),
     linear-gradient(180deg, rgba(22, 22, 22, 0.96), rgba(7, 7, 7, 0.98));
   color: var(--gold-2);
   font-size: 1.9rem;
@@ -1102,7 +1104,7 @@ body.menu-open {
   border: 1px solid rgba(246, 201, 108, 0.18);
   background:
     linear-gradient(180deg, rgba(14, 14, 14, 0.96), rgba(6, 6, 6, 0.96)),
-    radial-gradient(circle at top, rgba(243, 207, 133, 0.06), transparent 40%);
+    radial-gradient(circle at 50% 0%, rgba(243, 207, 133, 0.06), transparent 40%);
   box-shadow:
     0 40px 100px rgba(0, 0, 0, 0.6),
     0 0 32px rgba(243, 207, 133, 0.08);
@@ -1534,7 +1536,7 @@ body.modal-open {
   border: 1px solid rgba(246, 201, 108, 0.18);
   background:
     linear-gradient(180deg, rgba(14, 14, 14, 0.96), rgba(6, 6, 6, 0.96)),
-    radial-gradient(circle at top, rgba(243, 207, 133, 0.06), transparent 40%);
+    radial-gradient(circle at 50% 0%, rgba(243, 207, 133, 0.06), transparent 40%);
   box-shadow:
     0 40px 100px rgba(0, 0, 0, 0.6),
     0 0 32px rgba(243, 207, 133, 0.08);
@@ -1669,6 +1671,7 @@ body.modal-open {
   letter-spacing: 0.04em;
   color: transparent;
   background: linear-gradient(180deg, #fff8e0 0%, #f6d892 45%, #d59f43 90%);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow:
